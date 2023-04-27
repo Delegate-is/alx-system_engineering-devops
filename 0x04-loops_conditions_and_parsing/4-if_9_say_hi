@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-#Displaying Best School 10 times using a while loop
+#Displaying Best School 10 times using a while loop with Hi after 9th iteration
 
 count=1
 
