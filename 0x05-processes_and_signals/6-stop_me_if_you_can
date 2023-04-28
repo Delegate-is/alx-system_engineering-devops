@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#Bash Script that stops "4-to_infinity_and_beyond" without kill/killall
+
+pkill -15 "bash ./4-to_infinity_and_beyond" -f
