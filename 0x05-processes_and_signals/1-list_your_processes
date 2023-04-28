@@ -2,4 +2,4 @@
 #Bash Script diplaying curently running processes
 
 
-ps axjf
+ps -faux
