@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Bash Script displayinghow to stop process with kill
+
+kill 14593
