@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#Bash Script that stops "7-highlander"
+
+pkill -9 "bash ./7-highlander" -f
