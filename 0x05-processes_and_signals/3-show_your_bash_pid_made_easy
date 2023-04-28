@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# Bash Script with PID and name of processes with word bash
+
+
+pgrep -l bash
