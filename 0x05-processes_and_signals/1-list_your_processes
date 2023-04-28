@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#Bash Script diplaying curently running processes
+
+ps axjf
