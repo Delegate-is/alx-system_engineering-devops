@@ -1,1 +1,15 @@
-Vile inafaa
+#!/usr/bin/env bash
+#Bash Script displaying listening ports
+#!/bin/bash
+
+# Get the list of listening sockets and their corresponding PIDs
+sockets=$(sudo lsof -i -P -n | grep LISTEN)
+
+printf "%-15s %-25s %-20s\n" "PID" "Program Name" "Listening Port"
+
+while read -r line; do
+    pid=$(echo "$line" | awk '{print $2}')
+    name=$(echo "$line" | awk '{print $1}')
+    port=$(echo "$line" | awk '{print $9}' | cut -d ":" -f2)
+    printf "%-15s %-25s %-20s\n" "$pid" "$name" "$port"
+done <<< "$sockets"
