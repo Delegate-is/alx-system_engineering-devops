@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 """
-Using https://jsonplaceholder.typicode.com
-gathers data from API and exports it to JSON file
-Implemented using recursion
+Using this REST API url
+gathers data from API and extend your Python script to export data
+in the JSON format, Implemented using recursion
 """
 import json
 import re
